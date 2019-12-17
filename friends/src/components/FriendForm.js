@@ -18,7 +18,10 @@ const handleSubmit = e => {
   e.preventDefault();
   axiosWithAuth()
     .post('/friends', newFriend)
-    .then(res => console.log('response from DB: ', res))
+    .then(res => { 
+      console.log('response from DB: ', res)
+      props.setFriends(res.data)
+    })
     .catch(err => console.log(err))
   setNewFriend({
     name: '',

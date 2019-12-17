@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Adamina|Libre+Baskerville|Taviraj&display=swap');
+
 .App {
   text-align: center;
   display: flex;
@@ -49,10 +52,23 @@ li {
   margin: 0 10px;
 }
 
+.friend-form {
+  margin-bottom: 10px;
+}
+
 form > * {
   margin: 0 5px;
-  padding: 3px;
+  padding: 3px 10px;
+  border-radius: 7px;
+  /* font-family: 'Montserrat'; */
+  font-size: 15px;
+  font-weight: bold;
 }
+
+ button {
+   color: white;
+   background-color: dodgerblue;
+ }
 
 .friends-list {
   display: flex;
@@ -66,13 +82,30 @@ form > * {
 .friend-card {
   border: 5px solid black;
   border-radius: 10px;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 10px;
   width: 300px;
+  /* font-weight: bold; */
 }
 
 .friends {
+  font-family: 'Caveat', cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
   color: white;
   background-color: black;
-  border: 5px solid skyblue;
+  border: 5px solid khaki;
+  /* box-shadow: 5px 5px 5px red inset; */
+  /* -webkit-text-stroke: 0.00000125e m red; */
+}
+
+.friends p {
+  color: skyblue;
+}
+
+.seinfeld {
+  font-family: 'Taviraj', serif;
+  font-style: italic;
+  color: red;
+  background-color: gold;
 }

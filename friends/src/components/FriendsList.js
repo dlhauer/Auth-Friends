@@ -19,12 +19,14 @@ const FriendsList = props => {
 
   console.log(localStorage.getItem('token'));
   return (
-    <div className='friends-list'>
-      {/* <h2>Friends List!</h2> */}
-      <FriendForm />
-      {friends.map( (friend, index) => (
-        <Friend key={index} friend={friend}/>
-      ))}
+    <div className='friends-page'>
+      <FriendForm setFriends={setFriends}/>
+      <div className='friends-list'>
+        {/* <h2>Friends List!</h2> */}
+        {friends.map( (friend, index) => (
+          <Friend key={index} friend={friend}/>
+        ))}
+      </div>
     </div>
 
   );
